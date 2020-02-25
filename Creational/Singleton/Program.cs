@@ -2,19 +2,24 @@ using System;
 
 namespace Singleton
 {
-	public static class Program
-	{
-		private static void Main()
-		{
-			var singleton1 = Singleton.Instance();
-			var singleton2 = Singleton.Instance();
+    public static class Program
+    {
+        private static void Main()
+        {
 
-			if (singleton1 == singleton2)
-			{
-				Console.WriteLine("Objects are the same instance!");
-			}
+            //We will use pattern Strategy
+            //for verification if Singleton implementation is correct
 
-			Console.ReadKey();
-		}
-	}
+
+            var singleton1 = Singleton.Instance();
+            var singleton2 = Singleton.Instance();
+
+            if (singleton1 == singleton2)
+            {
+                Console.WriteLine("Objects are the same instance!");
+            }
+
+            Console.ReadKey();
+        }
+    }
 }

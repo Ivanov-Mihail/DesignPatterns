@@ -5,7 +5,8 @@ using System.Text;
 namespace Singleton
 {
     // Sealed class for optimization JIT compilation
-    public sealed class LazySingleton
+    public sealed class LazySingleton : ISingleton
+
     {
 
         public static LazySingleton Source
